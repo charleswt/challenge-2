@@ -1,6 +1,7 @@
 
   
 body {
+  justify-content: ;
     min-height: 100vh;
     font-weight: 100;
     background: radial-gradient(#a23982,#1f1013);
@@ -331,10 +332,34 @@ button:focus{
   transform: translate(95vw,90vh);
 }
 
+
+.left {
+  margin-left: 40px;
+  color: rgb(255, 255, 255, .7);
+  text-decoration: underline;
+  float: left;
+  margin-right: 20px;
+  font-size: 3rem;
+}
+
+
 nav {
     background-image: linear-gradient(180deg, rgba(0, 0, 0, .8), rgba(0, 0, 0, 0));
     height: 100px;
 }
+
+h1 {
+  display: inline-block;
+  position: relative;
+  color:  rgb(255, 255, 255, .7);
+  top: 10px;
+  padding: 7px;
+  padding-right: 10px;
+  padding-left: 20px;
+  font-size: 4rem;
+  border-radius: 15px;
+}
+
 
 a {
     position: flex;
@@ -357,19 +382,6 @@ a:hover {
     transition: .4s;
 }
 
-h1 {
-    display: inline-block;
-    position: relative;
-    color:  rgb(255, 255, 255, .7);
-    top: 10px;
-    padding: 7px;
-    padding-right: 10px;
-    padding-left: 20px;
-    font-size: 4rem;
-    border-radius: 15px;
-    left: -10px;
-}
-
 article {
     line-height: 1.5;
     color:  rgb(255, 255, 255, .7);
@@ -384,51 +396,111 @@ article {
     font-size: 1.5rem;
 }
 
-.left {
-    margin-left: 40px;
-    color: rgb(255, 255, 255, .7);
-    text-decoration: underline;
-    float: left;
-    margin-right: 20px;
-    padding-bottom: 200px;
-    font-size: 3rem;
+
+.center {
+  display: flex;
+  position: relative;
+  justify-content: center;
 }
 
 .main-project {
-    position: relative;
-    justify-content: center;
+  width: 110%;
+}
+
+/* Container holding the image and the text */
+.container {
+  position: relative;
+}
+
+/* Bottom right text */
+.text-block {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .img {
-    
-    width: 100%;
+    position: relative;
     border-radius: 15px;
     box-shadow: rgb(255, 255, 255, .25) 0px 13px 27px 5px, rgb(255, 255, 255, .3) 0px 8px 16px 8px;
     width: 75%;
     }
 
+    .img2 {
+      position: relative;
+      position: flex;
+      border-radius: 15px;
+      box-shadow: rgb(255, 255, 255, .25) 0px 13px 27px 5px, rgb(255, 255, 255, .3) 0px 8px 16px 8px;
+      width: 50%;
+      }
+
+.card1 {
+}
+
 footer {
     background-image: linear-gradient(180deg, rgba(0, 0, 0, .0), rgba(0, 0, 0, .80));
 }
 
-.row-center {
-    min-width: 100%;
+
+.row {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
-  flex-grow: 1;
 }
 
 /* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
 
-@media screen and (max-width: 500px) {
+  @media screen and (min-width: 1px) {
+    
+  .column {
+    flex: 0 0 100%;
+    width: 100%;
+  }
+
+
+  a {
+    font-size: 1.5rem;
+  }
+  
+
+.left {
+    font-size: 2rem;
+    padding: 10px;
+    float: none;
+    text-align: center;
+}
+
+a {
+    position: relative;
+    justify-content: center ;
+}
+  
+  h1 {
+    font-size:2.5rem;
+    float: center;
+  }
+
+  .column:last-child {
+    flex-grow: 1;
+  }
+}
+
+
+@media screen and (min-width: 500px) {
     
   .column {
     flex: 0 0 50%;
-    width: auto;
+    width: 50%;
   }
 
+a {
+  font-size: 1.5rem;
+}
 
 .left {
     padding: 10px;
@@ -452,15 +524,28 @@ a {
 }
 
 @media screen and (min-width: 768px) {
-
-  .column {
+.row {
     flex: 0 0 50%;
-    max-width: 50%;
   }
 
   h1 {
-    font-size:2.5rem
+    font-size:2.5rem;
+    display: inline-block;
+    position: relative;
+    justify-content: end;
   }
+
+  .left {
+    padding: 10px;
+    float: none;
+    text-align: center;
+}
+
+nav {
+  position: relative;
+  justify-content:center;
+}
+
 
   .column:last-child {
     flex-grow: 1;
@@ -468,13 +553,8 @@ a {
 }
 
 /* media query for larger screens */
-@media screen and (min-width: 992px) {
-   {
-    width: 75%;
+ @media screen and (min-width: 992px) {
+   body {
+    width: 100%;
   }
-
-  .column {
-    flex: 0 0 33.333%;
-    max-width: 33.333%;
-  }
-}
+}  

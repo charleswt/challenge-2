@@ -8,79 +8,72 @@
     <title>Charles Tiffany's Portfolio</title>
 </head>
 
-<!-- <div class="left">
-    <ul>
-        <li>About Me</li>
-        <li>Work</li>
-        <li>Contact Me</li>
-    </ul>
-    </div> -->
-
 <body>
-
+    <header>
     <nav>
         <h1 class="align-start">Charles Tiffany</h1>
-        <!--in style.css use an a [href] to identify. justify-content:align-end-->
         <a href="#aboutme">About Me</a>
         <a href="#work">Work</a>
         <a href="#contactme">Contact Me</a>
         <a href="#resume">Resume</a>
     </nav>
-
+</header>
     <article>
-        <p class="left">About Me</p>
+        <p id="#aboutme" class="left">About Me</p>
         <p class="about-me">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit amet. Odio eu feugiat pretium nibh ipsum consequat. Morbi quis commodo odio aenean sed adipiscing. Mauris vitae ultricies leo integer malesuada nunc. Facilisis volutpat est velit egestas dui. Vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean. Venenatis cras sed felis eget velit aliquet sagittis. Nulla facilisi nullam vehicula ipsum a. Velit ut tortor pretium viverra suspendisse potenti nullam. Enim lobortis scelerisque fermentum dui faucibus.</p>
     </article>
 
 <!--use main with flex media keeping main-project out of column and row-->
 
-<p class="left">Work</p>
+<p id="#work" class="left">Work</p>
 
-    <main class="">
+    <main  class="justify-center">
 
-        <div class="main-project container">
-                <img class="img" src="./assets/images/mockimg.png">
-                <div class="text-block">
-                <h2 class="card3">Main Project</h2>
-                <h3 class="card35">HTML/CSS</h3>
-            </div>
-        </div>
+        <div>
+            <figure class="code-card main-project">
+              <div>
+                <h2>main project</h2>
+                <p>html/css</p>
+              </div>
+            </figure>
+          </div>
         
-        <section class="center row">
+        <section class="row">
 
-        <div class="column container">
-                <img class="img2" src="./assets/images/mockimg.png">
-                <div class="text-block">
-                <h2>Example Project</h2>
-                <h3>ABCD/EFGH</h3>
-            </div>
-        </div>
+            <div class="column img">
+                <figure class="code-card">
+                  <div>
+                    <h2>main project</h2>
+                    <p>html/css</p>
+                  </div>
+                </figure>
+              </div>
+        <div class="column img">
+            <figure class="code-card">
+              <div>
+                <h2>main project</h2>
+                <p>html/css</p>
+              </div>
+            </figure>
+          </div>
+        <div class="column img">
+            <figure class="code-card">
+              <div>
+                <h2>main project</h2>
+                <p>html/css</p>
+              </div>
+            </figure>
+          </div>
+        <div class="column img">
+            <figure class="code-card">
+              <div>
+                <h2>main project</h2>
+                <p>html/css</p>
+              </div>
+            </figure>
+          </div>
 
-        <div class="column container">
-                <img class="img2" src="./assets/images/mockimg.png">
-                <div class="text-block">
-                <h2>Example Project</h2>
-                <h3>ABCD/EFGH</h3>
-            </div>
-        </div>
-        
-        <div class="column container">
-                <img class="img2 container" src="./assets/images/mockimg.png">
-                <div class="text-block">
-                <h2>Example Project</h2>
-                <h3>ABCD/EFGH</h3>
-            </div>
-        </div>
-        
-        <div class="column container">
-                <img class="img2" src="./assets/images/mockimg.png">
-                <div class="text-block">
-                <h2>Example Project</h2>
-                <h3>ABCD/EFGH</h3>
-            </div>
-        </div>
-
-    </section>
+        </section>
 
     </main>
 
@@ -96,7 +89,7 @@
   <div class='light x9'></div>
     
 
-    <p class="left">Contact Me</p>
+    <p id="#contactme" class="left">Contact Me</p>
 
     <footer>
 

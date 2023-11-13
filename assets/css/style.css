@@ -1,7 +1,7 @@
 html{
   scroll-behavior: smooth;
-}
-  
+} 
+  /* from here down till 341 you are using word wrap was taken from https://alvarotrigo.com/blog/animated-backgrounds-css/ on line 18*/
 body {
     min-height: 100vh;
     font-weight: 100;
@@ -332,7 +332,7 @@ button:focus{
   transform: translate(95vw,90vh);
   transform: translate(95vw,90vh);
 }
-
+/* from here up was taken from https://alvarotrigo.com/blog/animated-backgrounds-css/ on line 18*/
 main {
   margin: 20px;
 }
@@ -343,9 +343,9 @@ main {
   text-align: center;
   color: rgb(255, 255, 255, .7);
   text-decoration: underline;
-  margin-right: 20px;
+  margin-right: 40px;
   font-size: 2.5rem;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 
@@ -358,7 +358,7 @@ nav {
   display: relative;
   padding-top: 20px;
 }
-
+/* styling for name in nav */
 h1 {
   display: inline-block;
   color:  rgb(255, 255, 255, .7);
@@ -366,11 +366,14 @@ h1 {
   padding-right: 10px;
   padding-left: 20px;
   font-size: 3rem;
-  border-radius: 15px;
   width: 100%;
+  border:3px solid rgb(255, 255, 255, .7);
+  border-left: none;
+  border-right: none;
+  background-color: rgb(255, 255, 255, .07);
 }
-
-a {
+/* button style and hover */
+.a {
   text-align: center;
     border-radius: 5px;
     float: inline-start;
@@ -382,47 +385,41 @@ a {
     text-decoration: none;
     color: rgb(255, 255, 255, .7);
     background-color: rgb(255, 255, 255, .07);
+    transition: all .5s;
 }
 
-a:hover {
+.a:hover {
     background-color: rgba(161, 15, 95, 0.3);
     box-shadow: rgba(161, 15, 95, 0.25) 0px 13px 27px 5px, rgba(161, 15, 95, 0.3) 0px 8px 16px 8px;
     transform:scale(1.1);
-    transition: .4s;
 }
 
+/* article style */
 article {
     line-height: 1.5;
     color:  rgb(255, 255, 255, .7);
     display: inline-block;
     position: relative;
-    margin: 40px;
+    margin: 20px;
+    margin-top: 20px;
 }
 
 .about-me {
     text-indent: 4rem;
     font-size: 1.5rem;
 }
-
-.main-project {
-  background-image: url("/assets/images/mockimg.png");
-  background-size:cover;
-  border-radius: 15px;
-  box-shadow: rgb(255, 255, 255, .25) 0px 13px 27px 5px, rgb(255, 255, 255, .3) 0px 8px 16px 8px;
-  min-height: 200px;
-  width: 100%;
-}
-
+/* this is for the image labels */
 .container {
+  position: relative;
   background-color: rgba(0, 0, 0, .5);
   width: fit-content;
   padding: 5px;
-  margin-top: 15px;
+  margin-top: -80px;
   color:  rgb(255, 255, 255, .7);
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
-
+/* this is the contact part of footer */
 ul {
   text-align: center;
   margin-bottom: -10px;
@@ -441,15 +438,12 @@ footer{
   height: 130px;
   margin-top: 100px;
 }
-
-.img {
+/* image style flex row and column */
+.flex-img {
   position: relative;
-  min-height: 100px;
-  background-image: url("/assets/images/mockimg.png");
   background-size:cover;
   border-radius: 15px;
   box-shadow: rgb(255, 255, 255, .25) 0px 13px 27px 5px, rgb(255, 255, 255, .3) 0px 8px 16px 8px;
-  margin-bottom: 20px;
 }
 
 .card {
@@ -458,7 +452,7 @@ footer{
 }
 
 .row {
-  margin-top: 20px;
+  margin-top: 40px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -471,6 +465,8 @@ footer{
   transition: flex-basis 500ms linear;
   margin-bottom: 1.5rem;
 }
+
+/* at first @media screen was weird to me then I had a lightbulb moment and I feel that I did pretty well with this */
 
 @media screen and (min-width: 768px) {
   .column {
@@ -488,7 +484,7 @@ footer{
     text-decoration: underline;
   }
 
-  a {
+  .a {
     font-size: 2.5rem;
   }
 
@@ -513,7 +509,7 @@ footer{
     max-width: 48%;
   }
 
-  a {
+  .a {
     font-size: 3rem;
   }
 
@@ -533,12 +529,15 @@ footer{
     margin: 40px;
   }
 
-  a {
+  .a {
     float: inline-end;
     font-size: 2.5rem;
   }
 
   h1 {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-right:3px solid rgb(255, 255, 255, .7);
     width: auto;
   }
 

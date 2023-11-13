@@ -10,12 +10,16 @@
 
 <body>
     <header>
+      <!-- interactive navbar that will bring you to other elements when clicked -->
+      <!-- THE RESUME BUTTON WILL NOT GO ANYWHERE I AM GOING TO KEEP THIS AND IMPROVE UPON IT, IT IS FOR THE FUTURE -->
     <nav>
         <h1 class="align-start">Charles Tiffany</h1>
-        <a href="#aboutme">About Me</a>
-        <a href="#work">Work</a>
-        <a href="#contactme">Contact Me</a>
-        <a href="#resume">Resume</a>
+        <!-- IF YOU MAKE THIS CODE AGAIN IT WILL CREATE AN ICON I DIDNT WANT TO PUT ONE BECAUSE IT DOESNT FIT THE COLOR SCHEME -->
+        <!-- <img class="icon" src="assets/images/icon.webp"> <style>.icon { height: 50px; border-radius: 50%; margin-left: 10px;} </style> -->
+        <a class="a" href="#aboutme">About Me</a>
+        <a class="a" href="#work">Work</a>
+        <a class="a" href="#contactme">Contact Me</a>
+        <a class="a" href="#resume">Resume</a>
     </nav>
 </header>
     <article id="#aboutme" >
@@ -26,46 +30,65 @@
 <p class="left">Work</p>
 
     <main>
-
-        <div id="#work" >
-            <figure class="card main-project">
+      <!-- Not part of row or column larger than other boxes-->
+        <div>
+          <a href="https://charleswt.github.io/challenge-2/">
+          <img id="#work" class="flex-img" src="assets/images/challenge2.png" width="100%">
+        </a>
+            <figure class="card">
               <div class="container">
-                <h2>main project</h2>
+                <h2>Challenge 2</h2>
                 <p>html/css</p>
               </div>
             </figure>
           </div>
-        
-        <section class="row">
+<!-- flex box images row and column -->
+        <section class="row"> 
 
-            <div class="column img">
+            <div class="column">
+              <!-- Image and label with link that brings you to deployed site -->
+              <a href="https://charleswt.github.io/challenge-1/">
+              <img class="flex-img" src="assets/images/challenge1.png" width="100%">
+            </a>
                 <figure class="card">
                   <div class="container">
-                    <h2>main project</h2>
+                    <h2>Challenge 1</h2>
                     <p>html/css</p>
                   </div>
                 </figure>
               </div>
-        <div class="column img">
+
+        <div class="column">
+          <a href="https://charleswt.github.io/mini-project-2/">
+          <img class="flex-img" src="assets/images/miniproject2.png" width="100%">
+        </a>
             <figure class="card">
               <div class="container">
-                <h2>main project</h2>
+                <h2>Mini Project 2</h2>
                 <p>html/css</p>
               </div>
             </figure>
           </div>
-        <div class="column img">
+
+        <div class="column">
+          <a href="https://charleswt.github.io/marathon/">
+          <img class="flex-img" src="assets/images/marathon.png" width="100%">
+        </a>
             <figure class="card">
               <div class="container">
-                <h2>main project</h2>
+                <h2>My Second Try</h2>
                 <p>html/css</p>
               </div>
             </figure>
           </div>
-        <div class="column img">
+
+        <div class="column">
+          <a href="https://charleswt.github.io/my-first-website/">
+          <img class="flex-img" src="assets/images/firstwebsite.png" width="100%">
+        </a>
             <figure class="card">
               <div class="container">
-                <h2>main project</h2>
+                <h2>My First Try</h2>
                 <p>html/css</p>
               </div>
             </figure>
@@ -74,7 +97,7 @@
         </section>
 
     </main>
-
+<!-- background image -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
   <div class='light x1'></div>
   <div class='light x2'></div>
@@ -86,7 +109,7 @@
   <div class='light x8'></div>
   <div class='light x9'></div>
     
-
+<!-- footer -->
     <footer  id="#contactme">
       <p class="left">Contact Me</p>
         <ul>

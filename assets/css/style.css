@@ -387,7 +387,7 @@ h1 {
     background-color: rgb(255, 255, 255, .07);
     transition: all .5s;
 }
-
+/* makes resume anchor botton shake */
 .resume:hover {
   background-color: rgba(161, 15, 95, 0.3);
   box-shadow: rgba(161, 15, 95, 0.25) 0px 13px 27px 5px, rgba(161, 15, 95, 0.3) 0px 8px 16px 8px;
